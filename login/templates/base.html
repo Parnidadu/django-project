@@ -34,11 +34,12 @@
         <li class="nav-item" style="color:gray">
             <a class="nav-link ml-auto"  href="{% url 'login:about' %}" class="nav-link">About</a>
           </li>
-        <li class="nav-item" style="color:gray">
+          <li class="nav-item" style="color:gray">
           <a class="nav-link" href="{% url 'login:register' %}" class="nav-link">register</a>
         </li>
       
       <!-- <ul class="navbar-nav ml-auto"> -->
+  
         <li class="nav-item ">
           {% if user.is_authenticated %}
           <a class="nav-link" href="{% url 'login:login' %}">Login</a>
@@ -46,6 +47,7 @@
           <a class="nav-link" href="{% url 'login:logout' %}">Logout</a>
           {% endif %}
         </li>
+
       </ul>
     </div>
   </nav>
