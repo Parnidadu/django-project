@@ -7,7 +7,4 @@ class Profile(models.Model):
 	last_name = models.CharField(max_length=50,default="")
 	email = models.EmailField(primary_key=True,default="")
 	password = models.CharField(max_length=50,default="")
-	image = models.ImageField('choose your photo',upload_to='profile_pic')
-
-	def __str__(self):
-		self.email
+	image = models.ImageField('choose your photo',upload_to='media',default="media/passport.jpg")
